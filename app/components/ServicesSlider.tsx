@@ -1,37 +1,84 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'; // Import Swiper styles
+import 'swiper/swiper-bundle.min.css';
+import { Autoplay, Pagination } from 'swiper';
 
 const ServicesSlider: React.FC = () => {
   return (
-    <div id="services" className="text-center mt-20 mb-18 bg-slate-50 p-6 rounded-lg shadow-md">
-      <h2 className="text-4xl font-bold text-gray-900 mb-4">Nasze usługi</h2>
-      <p className="text-lg text-gray-700 mb-10">
-        Oferujemy szeroki zakres usług medycznych i estetycznych, które poprawią Twoje zdrowie i urodę:
-      </p>
-      <div className="relative w-full overflow-hidden px-4">
-        <Swiper
-          spaceBetween={20} // Space between slides
-          slidesPerView={2} // Show 2 slides at a time
-          loop
-          centeredSlides
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          className="mySwiper"
-        >
-          {[1, 2, 3, 4, 5].map((index) => (
-            <SwiperSlide key={index} className="flex justify-center">
-              <div className="slide-content border border-gray-300 rounded-lg p-4 w-full max-w-[calc(50%-20px)]">
-                <img src="images/aging.jpg" alt="Usługa" className="w-full h-40 object-cover mb-4" />
-                <p className="text-xl font-semibold text-gray-800 mb-2">Nazwa usługi {index}</p>
-                <p className="text-gray-600 mb-2">
-                  <strong>Opis:</strong> Opis usługi {index}.
-                </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    <div className="text-center bg-slate-50 rounded-lg relative">
+      <Swiper
+        spaceBetween={0}
+        slidesPerView={'auto'}
+        pagination={{ 
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        speed={800}
+        loop={true}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
+        style={{ height: '400px' }} >
+
+        <SwiperSlide className="relative flex items-end justify-center h-full">
+          <img src="images/aesthetical.jpg" alt="Usługa" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+            <p className="text-xl font-semibold">Medycyna estetyczna</p>
+            <p>Procedury poprawiające wygląd i zdrowie skóry.</p>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="relative flex items-end justify-center h-full">
+          <img src="images/aging.jpg" alt="Usługa" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+            <p className="text-xl font-semibold">Medycyna anti-aging</p>
+            <p>Technologie i metody przeciwdziałające starzeniu się.</p>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="relative flex items-end justify-center h-full">
+          <img src="images/chinese.jpg" alt="Usługa" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+            <p className="text-xl font-semibold">Medycyna chińska</p>
+            <p>Tradycyjne metody leczenia i zdrowia z Chin.</p>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="relative flex items-end justify-center h-full">
+          <img src="images/rheumatology.jpg" alt="Usługa" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+            <p className="text-xl font-semibold">Reumatologia</p>
+            <p>Nowoczesne metody leczenia schorzeń reumatycznych.</p>
+          </div>
+        </SwiperSlide>
+
+        <div className="swiper-pagination-container"></div>
+      </Swiper>
+
+      <style jsx>{`
+
+        .swiper-pagination {
+          display: flex;
+          justify-content: center;
+        }
+
+        .swiper-pagination-bullet {
+          background-color: #cbd5e0;
+          width: 7px;
+          height: 7px;
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: #475569;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          display: none;
+        }
+      `}</style>
     </div>
   );
 };

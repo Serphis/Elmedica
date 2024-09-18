@@ -11,8 +11,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
     return (
         <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 flex justify-between items-center p-6 bg-slate-50 text-gray-600">
-        <div className="text-3xl text-gray-900">Helena Gworek</div>
+      <header className="sticky top-0 flex justify-between items-center p-6 bg-[#2d6986] text-slate-200 z-30">
+        <div className="text-3xl text-slate-200">Helena Gworek</div>
         <div className="flex space-x-8 text-xl">
         <button onClick={() => scrollToSection("about")}>O mnie</button>
           <button onClick={() => scrollToSection("services")}>Usługi</button>
@@ -24,8 +24,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {children}
       </main>
 
-      <footer id="contact" className="flex justify-end items-center p-5 bg-slate-200 text-black text-sm">
-        <div className="text-right">
+      <footer id="contact" className="flex justify-center items-center p-5 bg-slate-200 text-slate-500 text-sm">
+        <div className="text-center">
           <p>
             dr Helena Gworek
           </p>

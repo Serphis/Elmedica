@@ -4,6 +4,7 @@ import { Link } from "@remix-run/react";
 import Layout from "~/layouts/Layout";
 import Modal from "~/components/Modal";
 import ServicesSlider from "~/components/ServicesSlider";
+import ServicesList from "~/components/ServicesList";
 
 export const meta: MetaFunction = () => {
   return [
@@ -19,80 +20,83 @@ export default function Index() {
     setModalOpen(true);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Layout>
-      <div id="about" className="flex flex-col items-center p-4 bg-slate-100 min-h-screen">
-        <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <div id="about" className="flex flex-col items-center bg-slate-100 min-h-screen">
+        {/* <Modal isOpen={isModalOpen} onClose={closeModal} /> */}
 
-        <div className="text-center mt-10 mb-10">
-          <h1 className="text-5xl font-bold mt-20 mb-4 text-gray-900">Nowoczesna medycyna regeneracyjna i estetyczna</h1>
+        <div className="text-center bg-slate-50">
+          <ServicesSlider />
+        </div>
+
+        <div className="text-center mb-12 w-full shadow-lg">
+          <h1 className="text-5xl font-bold mt-24 mb-4 text-gray-900">Nowoczesna medycyna regeneracyjna i estetyczna</h1>
           <p className="text-lg text-gray-600">z myślą o Twoim zdrowiu i urodzie</p>
-          <div className="my-12">
-            <Link to="/">
-              <button className="px-16 py-4 mr-8 bg-blue-400 text-white font-semibold rounded-md shadow-md hover:bg-blue-500 transition duration-300">
-                Oferta
-              </button>
-            </Link>
-            <Link to="/">
-              <button className="px-10 py-4 bg-blue-400 text-white font-semibold rounded-md shadow-md hover:bg-blue-500 transition duration-300">
-                Umów wizytę
-              </button>
-            </Link>
+          <div className="my-12 flex space-x-14 justify-center">
+            <button onClick={() => scrollToSection("services")} className="px-16 py-4 bg-[#4095bf] text-white font-semibold rounded-md shadow-md hover:bg-[#2d6986] transition duration-300">
+              Oferta
+            </button>
+            <button onClick={() => scrollToSection("contact")} className="px-10 py-4 bg-[#4095bf] text-white font-semibold rounded-md shadow-md hover:bg-[#2d6986] transition duration-300">
+              Umów wizytę
+            </button>
           </div>
-      </div>
-      
-      <div id="services" className="text-center mt-20 my-18 bg-slate-50 p-6 rounded-lg shadow-md">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Nasze usługi</h2>
-        <p className="text-lg text-gray-700 mb-10">
-          Oferujemy szeroki zakres usług medycznych i estetycznych, które poprawią Twoje zdrowie i urodę:
-        </p>
-        <ServicesSlider />
-      </div>
+        </div>
 
+        <div id="services" className="w-full bg-slate-100 my-10 p-4 rounded-lg">
+          <div className="max-w-screen-lg mx-auto bg-white rounded-lg shadow-lg">
+            <img
+              src="/images/vitamins.jpg"
+              alt="Decorative Vitamins"
+              className="w-full h-64 object-cover rounded-t-lg"
+            />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-20 mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 my-6 text-center">
+              Diagnostyka SO/CHECK
+            </h2>
+            <p className="text-lg text-gray-700 mb-6 text-center">
+              Szybko i bez pobierania krwi!
+            </p>
+
+            <div className="space-y-4 mb-6">
+              <p className="text-md font-semibold text-gray-800 text-center">
+                Stężenie komórkowe poziomu makro i mikro elementów:
+              </p>
+              <ul className="list-disc list-inside text-gray-600 max-w-md mx-auto">
+                <li>21 minerałów: wapń, magnez, żelazo, sód, potas, miedź, cynk, selen, jod i inne</li>
+                <li>7 witamin: A, C, E, D3, B1, B9, B12</li>
+                <li>15 ciężkich metali: szkodliwych (aluminium, bor, rtęć, ołów, kadm, nikiel i inne)</li>
+              </ul>
+            </div>
+
+            <div className="flex justify-between items-center mb-6 max-w-lg mx-auto">
+              <p className="text-md font-semibold text-gray-800">
+                Poziom stresu oksydacyjnego
+              </p>
+              <p className="text-md font-semibold text-gray-800 text-right">
+                Ocena stanów zapalnych
+              </p>
+            </div>
+
+            <div className="text-center mt-6 p-4 bg-slate-200 rounded-b-lg">
+              <p className="text-xl font-semibold text-slate-900 mb-2">
+                Zapisy pod numerem telefonu:
+              </p>
+              <p className="text-2xl font-bold text-slate-900">
+                601-806-058
+              </p>
+            </div>
+          </div>
+        </div>
         
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white shadow-lg rounded-lg p-4">
-          <div className="lg:w-1/2 lg:mr-4 text-center lg:text-left">
-            <p className="text-md font-bold text-gray-700 mb-2">Reumatologia</p>
-            <p className="text-sm text-gray-600">
-              Opis: Nowoczesne metody leczenia schorzeń reumatycznych.
-            </p>
-          </div>
-          <img src="/images/rheumatology.jpg" alt="Rheumatology" className="w-full lg:w-1/2 h-48 object-cover rounded-lg mb-4 lg:mb-0" />
-        </div>
+        <ServicesList />
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white shadow-lg rounded-lg p-4">
-          <img src="/images/aesthetical.jpg" alt="Aesthetic Medicine" className="w-full lg:w-1/2 h-48 object-cover rounded-lg mb-4 lg:mb-0 lg:mr-4" />
-          <div className="text-center lg:text-left lg:w-1/2">
-            <p className="text-md font-bold text-gray-700 mb-2">Medycyna estetyczna</p>
-            <p className="text-sm text-gray-600">
-              Opis: Procedury poprawiające wygląd i zdrowie skóry.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white shadow-lg rounded-lg p-4">
-          <div className="lg:w-1/2 lg:mr-4 text-center lg:text-left">
-            <p className="text-md font-bold text-gray-700 mb-2">Medycyna chińska</p>
-            <p className="text-sm text-gray-600">
-              Opis: Tradycyjne metody leczenia i zdrowia z Chin.
-            </p>
-          </div>
-          <img src="/images/chinese.jpg" alt="Chinese Medicine" className="w-full lg:w-1/2 h-48 object-cover rounded-lg mb-4 lg:mb-0" />
-        </div>
-
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white shadow-lg rounded-lg p-4">
-          <img src="/images/aging.jpg" alt="Anti-Aging" className="w-full lg:w-1/2 h-48 object-cover rounded-lg mb-4 lg:mb-0 lg:mr-4" />
-          <div className="text-center lg:text-left lg:w-1/2">
-            <p className="text-md font-bold text-gray-700 mb-2">Medycyna anti-aging</p>
-            <p className="text-sm text-gray-600">
-              Opis: Technologie i metody przeciwdziałające starzeniu się.
-            </p>
-          </div>
-        </div>
-
-      </div>
       </div>
     </Layout>
   );
