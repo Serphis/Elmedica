@@ -65,7 +65,7 @@ export default function Index() {
         <div id="services" className="w-90% mx-4 my-10 flex flex-row">
           <div className="flex flex-col justify-center px-4 w-3/4">
             <div className="shadow-lg rounded-lg bg-slate-50 p-8 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
+              style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
               <h2 className="text-4xl font-bold text-gray-900 my-2 text-left">
                 Diagnostyka SO/CHECK
               </h2>
@@ -121,37 +121,31 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="w-90% mx-4 my-10 bg-white rounded-lg shadow-lg flex flex-row">
-          <div>
-            <img
-              src="/images/vitamins.jpg"
-              alt="Decorative Vitamins"
-              className="w-full h-full object-cover rounded-l-lg"
-            />
-          </div>
-
-          <div className="flex flex-col justify-center p-6 w-3/4">
-            <div className="shadow-lg rounded-lg bg-slate-50 p-8">
-              <h2 className="text-4xl font-bold text-gray-900 my-6 text-left">
+        <div id="contact" className="w-90% mx-4 mt-10 flex flex-row-reverse">
+          <div className="flex flex-col justify-center p-4 w-3/4">
+            <div className="shadow-lg rounded-lg p-8 bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
+              <h2 className="text-4xl font-bold text-gray-900 my-24 text-left">
                 Kontakt
               </h2>
-              
+
+              <div className="rounded-lg shadow-lg bg-white p-4">
+                <ul className="list-disc list-inside text-gray-600 text-left">
+                  <li>dr Helena Gworek</li>
+                  <li>tel. 604 274 786</li>
+                  <li>96-500 Sochaczew, ul. Okrężna 61</li>
+                </ul>
+              </div>
             </div>
-            <div className="text-center">
-              <p>
-                dr Helena Gworek
-              </p>
-              <p>
-                tel. 604 274 786
-              </p>
-              <p>
-                96-500 Sochaczew, ul. Okrężna 61
-              </p>
-            </div>
-              
+          </div>
+
+          <div className="w-1/2 p-4">
+            <img
+              src="/images/contact.jpg"
+              alt="Decorative Contact"
+              className="w-full h-full object-cover rounded-lg"/>
           </div>
         </div>
-
       </div>
     </Layout>
   );

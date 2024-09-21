@@ -14,23 +14,25 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
     return (
         <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 flex justify-between items-center p-3 px-12 bg-[#2d6986] z-30">
-        <div className="text-2xl text-slate-100 font-bold">Helena Gworek</div>
-        <div className="flex space-x-11 text-base text-slate-100">
-        <button onClick={() => scrollToSection("about")}>O mnie</button>
-          <button onClick={() => scrollToSection("services")}>Usługi</button>
-          <button onClick={() => scrollToSection("contact")}>Kontakt</button>
+          <header className="sticky top-0 flex justify-between items-center p-3 px-12 bg-slate-100 z-30">
+            <div className="text-2xl text-slate-900 font-bold">Helena Gworek</div>
+            <div className="flex space-x-11 text-base text-slate-800">
+              <button onClick={() => scrollToSection("about")}>O mnie</button>
+              <div className="border-l-2 border-gray-300 h-6 mx-auto"/>
+              <button onClick={() => scrollToSection("services")}>Usługi</button>
+              <div className="border-l-2 border-gray-300 h-6 mx-auto"/>
+              <button onClick={() => scrollToSection("contact")}>Kontakt</button>
+            </div>
+          </header>
+
+          <main className="flex-grow">
+                {children}
+          </main>
+
+          <footer id="contact" className="flex justify-center items-center p-5 bg-slate-200 text-slate-500 text-sm">
+            
+          </footer>
         </div>
-      </header>
-
-      <main className="flex-grow">
-            {children}
-      </main>
-
-      <footer id="contact" className="flex justify-center items-center p-5 bg-slate-200 text-slate-500 text-sm">
-        
-      </footer>
-    </div>
     )
 }
 
