@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from 'swiper';
 
 const ServicesSlider: React.FC = () => {
   return (
-    <div className="text-center bg-slate-50 rounded-lg relative">
+    <div className="text-center bg-slate-50 rounded-b-lg">
       <Swiper
         spaceBetween={0}
         slidesPerView={'auto'}
@@ -23,32 +23,32 @@ const ServicesSlider: React.FC = () => {
         style={{ height: '400px' }} >
 
         <SwiperSlide className="relative flex items-end justify-center h-full">
-          <img src="images/aesthetical.jpg" alt="Usługa" className="w-full h-full object-cover" />
-          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+          <img src="images/aesthetical.jpg" alt="Usługa" className="w-full h-full object-cover rounded-b-lg" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 rounded-b-lg text-white p-4 pb-6 text-center">
             <p className="text-xl font-semibold">Medycyna estetyczna</p>
             <p>Procedury poprawiające wygląd i zdrowie skóry.</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="relative flex items-end justify-center h-full">
-          <img src="images/aging.jpg" alt="Usługa" className="w-full h-full object-cover" />
-          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+          <img src="images/aging.jpg" alt="Usługa" className="w-full h-full object-cover rounded-b-lg" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 rounded-b-lg text-white p-4 pb-6 text-center">
             <p className="text-xl font-semibold">Medycyna anti-aging</p>
             <p>Technologie i metody przeciwdziałające starzeniu się.</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="relative flex items-end justify-center h-full">
-          <img src="images/chinese.jpg" alt="Usługa" className="w-full h-full object-cover" />
-          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+          <img src="images/chinese.jpg" alt="Usługa" className="w-full h-full object-cover rounded-b-lg" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 rounded-b-lg text-white p-4 pb-6 text-center">
             <p className="text-xl font-semibold">Medycyna chińska</p>
             <p>Tradycyjne metody leczenia i zdrowia z Chin.</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="relative flex items-end justify-center h-full">
-          <img src="images/rheumatology.jpg" alt="Usługa" className="w-full h-full object-cover" />
-          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center">
+          <img src="images/rheumatology.jpg" alt="Usługa" className="w-full h-full object-cover rounded-b-lg" />
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 rounded-b-lg text-white p-4 pb-6 text-center">
             <p className="text-xl font-semibold">Reumatologia</p>
             <p>Nowoczesne metody leczenia schorzeń reumatycznych.</p>
           </div>

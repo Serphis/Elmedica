@@ -36,28 +36,30 @@ const ServicesList = () => {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 p-4 w-full">
-      {services.map((service, index) => (
-        <div
-          key={index}
-          className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 flex-1"
-          style={{ flexBasis: 'calc(20% - 16px)', alignSelf: 'flex-start' }} >
-          <img src={service.image} alt={service.title} className="w-full h-48 object-cover rounded-t-lg" />
-          <div className="p-4 flex flex-col justify-between">
-            <h3 className="text-md font-bold text-gray-700 mb-2">{service.title}</h3>
-            <div className={`transition-all duration-300 ${expandedIndex === index ? 'max-h-96' : 'max-h-16 overflow-hidden'}`}>
-              <p className="text-sm text-gray-600">
-                {service.description}
-              </p>
+    <div className="w-90% mx-4 overflow-hidden">
+      <div className="h-128 py-8 overflow-auto flex flex-wrap gap-4">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 flex-1"
+            style={{ flexBasis: 'calc(20% - 16px)', alignSelf: 'flex-start' }} >
+            <img src={service.image} alt={service.title} className="w-full h-48 object-cover rounded-t-lg" />
+            <div className="p-4 flex flex-col justify-between">
+              <h3 className="text-md font-bold text-gray-700 mb-2">{service.title}</h3>
+              <div className={`transition-all duration-300 ${expandedIndex === index ? 'max-h-96' : 'max-h-16 overflow-hidden'}`}>
+                <p className="text-sm text-gray-600">
+                  {service.description}
+                </p>
+              </div>
+              <button
+                onClick={() => toggleDescription(index)}
+                className="bg-[#4095bf] text-white hover:underline focus:outline-none mt-2" >
+                {expandedIndex === index ? 'Pokaż mniej' : 'Pokaż więcej'}
+              </button>
             </div>
-            <button
-              onClick={() => toggleDescription(index)}
-              className="bg-[#4095bf] text-white hover:underline focus:outline-none mt-2" >
-              {expandedIndex === index ? 'Pokaż mniej' : 'Pokaż więcej'}
-            </button>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
