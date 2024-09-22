@@ -42,7 +42,7 @@ export default function Index() {
               <p className="text-lg text-gray-600">
                 z myślą o Twoim zdrowiu i urodzie
               </p>
-              <div className="mt-20 flex space-x-14">
+              <div className="mt-20 flex rows justify-center space-x-20">
                 <button
                   onClick={() => scrollToSection("services")}
                   className="px-12 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">

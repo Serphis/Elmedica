@@ -29,8 +29,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 {children}
           </main>
 
-          <footer id="contact" className="flex justify-center items-center p-5 bg-slate-200 text-slate-500 text-sm">
-            
+          <footer id="contact" className="flex flex-rows justify-between items-center p-2 px-6 bg-slate-200 text-slate-500 text-sm">
+            <p>Design by www.freepik.com</p>
+            <p>Projekt Jakub Gałuszewski</p>
           </footer>
         </div>
     )
