@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 const services = [
   {
     title: "Leczenie chorób stawów",
-    description: "Metody leczenia chorób stawów obejmujące stosowanie osocza oraz komórek macierzystych. Terapeutyczne zastosowanie tych technologii pozwala na regenerację i odbudowę uszkodzonych tkanek stawowych, co może przynieść ulgę w bólu i poprawić funkcjonowanie stawów.",
+    description: "Obejmuje stosowanie osocza oraz komórek macierzystych. Terapeutyczne zastosowanie tych technologii pozwala na regenerację i odbudowę uszkodzonych tkanek stawowych, co może przynieść ulgę w bólu i poprawić funkcjonowanie stawów.",
     image: "/images/rheumatology2.jpg",
   },
   {
     title: "Zabiegi estetyczne",
-    description: "Procedury estetyczne, takie jak stosowanie osocza, fibryny oraz komórek macierzystych, mają na celu poprawę wyglądu skóry. Zabiegi te mogą pomóc w redukcji zmarszczek, poprawie elastyczności skóry oraz przywróceniu jej zdrowego blasku.",
+    description: "Wykorzystywanie osocza, fibryny oraz komórek macierzystych, w celu poprawy wyglądu skóry. Zabiegi te mogą pomóc w redukcji zmarszczek, poprawie elastyczności skóry oraz przywróceniu jej zdrowego blasku.",
     image: "/images/aesthetical2.jpg",
   },
   {
@@ -18,12 +18,12 @@ const services = [
   },
   {
     title: "Mezoterapia",
-    description: "Mezoterapia polega na wprowadzaniu substancji odżywczych i regenerujących w głąb skóry, zarówno na twarzy, jak i ciele. Zabieg ten jest skuteczny w poprawie kondycji skóry, jej nawilżeniu i regeneracji.",
+    description: "Polega na wprowadzaniu substancji odżywczych i regenerujących w głąb skóry, zarówno na twarzy, jak i ciele. Zabieg ten jest skuteczny w poprawie kondycji skóry, jej nawilżeniu i regeneracji.",
     image: "/images/mesotherapy.jpg",
   },
   {
     title: "Zabiegi lecznicze",
-    description: "Skleroterapia, usuwanie żylaków kończyn dolnych, elektrochirurgia oraz usuwanie włókniaków to nowoczesne metody leczenia, które pomagają w eliminacji schorzeń naczyniowych i skórnych, poprawiając komfort pacjentów oraz ich zdrowie.",
+    description: "Skleroterapia, usuwanie żylaków kończyn dolnych, elektrochirurgia oraz usuwanie włókniaków. Te nowoczesne metody leczenia pomagają w eliminacji schorzeń naczyniowych i skórnych, poprawiając komfort oraz zdrowie pacjentów.",
     image: "/images/procedure.jpg",
   },
 ];
@@ -37,7 +37,7 @@ const ServicesList = () => {
 
   return (
     <div className="w-90% overflow-hidden">
-      <div id="services" className="h-128 pt-10 pb-4 overflow-auto flex flex-wrap gap-4">
+      <div className="h-128 pb-4 overflow-auto flex flex-wrap gap-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -53,7 +53,7 @@ const ServicesList = () => {
               </div>
               <button
                 onClick={() => toggleDescription(index)}
-                className="bg-slate-300 text-slate-600 hover:underline focus:outline-none mt-2 shadow-lg rounded-lg" >
+                className="bg-[#4095bf] text-white hover:bg-[#2d6986] transition duration-300 focus:outline-none mt-2 shadow-lg rounded-lg" >
                 {expandedIndex === index ? 'Pokaż mniej' : 'Pokaż więcej'}
               </button>
             </div>

@@ -21,14 +21,15 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
           </svg>
         </button>
 
-        <div className="mb-0 relative rounded-t-lg overflow-hidden">
+        <div className="mb-0 relative rounded-t-lg shadow-md overflow-hidden">
           <img
             src="/images/vitamins.jpg"
             alt="Decorative Vitamins"
-            className="w-full h-48 object-cover opacity-80" />
+            className="w-full h-48 object-cover" />
         </div>
 
-        <div className="bg-slate-100 p-6 mt-[-1px] rounded-b-lg">
+        <div className="p-6 mt-[-1px] rounded-b-lg bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
           <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">
             Diagnostyka SO/CHECK
           </h2>
@@ -36,23 +37,35 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
             Szybko i bez pobierania krwi!
           </p>
 
-          <div className="space-y-4 mb-4">
-            <p className="text-md font-semibold text-gray-800 text-center">Stężenie komórkowe poziomu makro i mikro elementów:</p>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>21 minerałów: wapń, magnez, żelazo, sód, potas, miedź, cynk, selen, jod i inne</li>
-              <li>7 witamin: A, C, E, D3, B1, B9, B12</li>
-              <li>15 ciężkich metali: szkodliwych (aluminium, bor, rtęć, ołów, kadm, nikiel i inne)</li>
-            </ul>
+          <div className="bg-white rounded-lg shadow-lg p-4">
+            <div className="space-y-4 mb-4 ">
+              <p className="text-md font-semibold text-gray-800 text-center">Stężenie komórkowe poziomu makro i mikro elementów:</p>
+              <ul className="list-disc list-inside text-gray-600">
+                <li>21 minerałów: wapń, magnez, żelazo, sód, potas, miedź, cynk, selen, jod i inne</li>
+                <li>7 witamin: A, C, E, D3, B1, B9, B12</li>
+                <li>15 ciężkich metali: szkodliwych (aluminium, bor, rtęć, ołów, kadm, nikiel i inne)</li>
+              </ul>
+            </div>
+
+            <div className="flex justify-between items-center">
+              <p className="text-left text-md font-semibold text-gray-800">Poziom stresu oksydacyjnego</p>
+              <p className="text-right text-md font-semibold text-gray-800">Ocena stanów zapalnych</p>
+            </div>
+          </div>
+          
+          <div className="mx-auto pt-8 px-8">
+            <p className="text-md text-center font-semibold text-gray-800">
+                Zadzwoń lub napisz SMS!
+            </p>
           </div>
 
-          <div className="flex justify-between items-center mb-4">
-            <p className="text-left text-md font-semibold text-gray-800">Poziom stresu oksydacyjnego</p>
-            <p className="text-right text-md font-semibold text-gray-800">Ocena stanów zapalnych</p>
-          </div>
-
-          <div className="text-center mt-4 p-2 bg-[#afd7eb] rounded-md">
-            <p className="text-xl font-semibold text-slate-900 mb-2">Zapisy pod numerem telefonu:</p>
-            <p className="text-2xl font-bold text-slate-900 p-2 inline-block">601-806-058</p>
+          <div className="text-center w-fit mt-2 mx-auto p-4 bg-white shadow-2xl rounded-lg">
+            <p className="text-xl font-semibold text-slate-900 mb-2">
+              Zapisy pod numerem telefonu:
+            </p>
+            <p className="text-2xl font-bold text-slate-900">
+              601-806-058
+            </p>
           </div>
         </div>
       </div>

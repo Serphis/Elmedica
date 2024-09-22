@@ -23,35 +23,37 @@ export default function Index() {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offset = 100;
+      const top = section.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
     }
   };
 
   return (
     <Layout>
       <div  className="bg-slate-100">
-        {/* <Modal isOpen={isModalOpen} onClose={closeModal} /> */}
-
-        <div id="about" className="w-90% mx-4 py-4 px-4 text-left">
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
+        <div id="about" className="w-90% mx-4 py-8 px-4">
           <div className="flex flex-row justify-between items-start bg-cover bg-center rounded-lg shadow-lg"
               style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
-            <div className="w-1/2 pt-16 pb-10 ml-10">
+            <div className="w-1/2 pt-10 pb-4 ml-10 text-left">
               <p className="text-4xl font-bold mb-4 text-gray-900">
-                Nowoczesna medycyna regeneracyjna i estetyczna
+                O mnie
               </p>
-              <p className="text-lg text-gray-600">
-                z myślą o Twoim zdrowiu i urodzie
+              <p className="text-lg text-gray-600 py-1">
+                Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002). Ukończyła kursy praktyczne i teoretyczne w Chinach oraz liczne kursy Tradycyjnej Medycyny Chińskiej w Polsce i za granicą.
               </p>
-              <div className="mt-20 flex rows justify-center space-x-20">
+              <p className="text-lg text-gray-600 py-1">
+                Posiada wieloletnie doświadczenie w leczeniu chorób wewnętrznych, reumatologicznych, onkologicznych i ginekologicznych.
+              </p>
+              <p className="text-lg text-gray-600 py-1">
+                Jest specjalistą medycyny estetycznej i przeciw-starzeniowej. Wykonuje nowoczesne zabiegi estetyczne na bazie naturalnych składników oraz zabiegi leczenia chorob reumatycznych m.in. z wykorzystaniem osocza.
+              </p>
+              <div className="flex justify-center pt-4">
                 <button
-                  onClick={() => scrollToSection("services")}
-                  className="px-12 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
-                  Oferta
-                </button>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="px-8 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
-                  Umów wizytę
+                    onClick={() => scrollToSection("contact")}
+                    className="px-8 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
+                    Umów wizytę
                 </button>
               </div>
             </div>
@@ -61,7 +63,11 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="mt-12">
+          
+          <div id="services" className="text-center mt-16 mb-5 text-2xl text-slate-700">
+            Oferowane usługi
+          </div>
+          <div className="">
             <ServicesList />
           </div>
         </div>
@@ -106,7 +112,7 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className="text-center w-fit mx-auto mt-2 p-4 bg-white shadow-lg rounded-lg">
+              <div className="text-center w-fit mx-auto mt-2 p-4 bg-white shadow-2xl rounded-lg">
                 <p className="text-xl font-semibold text-slate-900 mb-2">
                   Zapisy pod numerem telefonu:
                 </p>
@@ -128,9 +134,9 @@ export default function Index() {
 
         <div id="contact" className="w-90% mx-4 mt-10 flex flex-row-reverse">
           <div className="flex flex-col justify-center p-4 w-3/4">
-            <div className="shadow-lg rounded-lg p-8 bg-cover bg-center"
+            <div className="shadow-lg rounded-lg p-8 bg-cover bg-center h-full"
               style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
-              <h2 className="text-4xl font-bold text-gray-900 my-24 text-left">
+              <h2 className="text-4xl font-bold text-gray-900 mt-24 mb-4 text-left">
                 Kontakt
               </h2>
 
