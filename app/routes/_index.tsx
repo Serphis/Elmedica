@@ -32,37 +32,42 @@ export default function Index() {
       <div  className="bg-slate-100">
         {/* <Modal isOpen={isModalOpen} onClose={closeModal} /> */}
 
-        <div className="text-center bg-slate-50">
-          <ServicesSlider />
-        </div>
+        <div id="about" className="w-90% mx-4 py-4 px-4 text-left">
+          <div className="flex flex-row justify-between items-start bg-cover bg-center rounded-lg shadow-lg"
+              style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
+            <div className="w-1/2 pt-16 pb-10 ml-10">
+              <p className="text-4xl font-bold mb-4 text-gray-900">
+                Nowoczesna medycyna regeneracyjna i estetyczna
+              </p>
+              <p className="text-lg text-gray-600">
+                z myślą o Twoim zdrowiu i urodzie
+              </p>
+              <div className="mt-20 flex space-x-14">
+                <button
+                  onClick={() => scrollToSection("services")}
+                  className="px-12 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
+                  Oferta
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="px-8 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
+                  Umów wizytę
+                </button>
+              </div>
+            </div>
 
-        <div id="about" className="w-90% mx-4 mb-8 text-center flex-row justify-center">          
-          <div className="mb-10 pt-16 pb-10 shadow-lg rounded-b-lg bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
-            <p className="text-4xl font-bold mb-4 text-gray-900">
-              Nowoczesna medycyna regeneracyjna i estetyczna
-            </p>
-            <p className="text-lg text-gray-600">
-              z myślą o Twoim zdrowiu i urodzie
-            </p>
-            <div className="my-12 flex space-x-14 justify-center">
-              <button
-                onClick={() => scrollToSection("services")}
-                className="px-12 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
-                Oferta
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="px-8 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
-                Umów wizytę
-              </button>
+            <div className="w-1/2 text-center ml-10 pl-6 h-full rounded-br-lg">
+              <ServicesSlider />
             </div>
           </div>
 
-          <ServicesList />
+          <div className="mt-12">
+            <ServicesList />
+          </div>
         </div>
 
-        <div id="services" className="w-90% mx-4 my-10 flex flex-row">
+
+        <div className="w-90% mx-4 mr-8 my-10 flex flex-row">
           <div className="flex flex-col justify-center px-4 w-3/4">
             <div className="shadow-lg rounded-lg bg-slate-50 p-8 bg-cover bg-center"
               style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
@@ -112,7 +117,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div>
+          <div className="w-1/2 shadow-lg rounded-lg">
             <img
               src="/images/vitamins.jpg"
               alt="Decorative Vitamins"
@@ -143,7 +148,7 @@ export default function Index() {
             <img
               src="/images/contact.jpg"
               alt="Decorative Contact"
-              className="w-full h-full object-cover rounded-lg"/>
+              className="w-full h-full object-cover rounded-lg shadow-lg"/>
           </div>
         </div>
       </div>

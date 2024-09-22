@@ -4,17 +4,17 @@ const services = [
   {
     title: "Leczenie chorób stawów",
     description: "Metody leczenia chorób stawów obejmujące stosowanie osocza oraz komórek macierzystych. Terapeutyczne zastosowanie tych technologii pozwala na regenerację i odbudowę uszkodzonych tkanek stawowych, co może przynieść ulgę w bólu i poprawić funkcjonowanie stawów.",
-    image: "/images/joint-treatment.jpg",
+    image: "/images/rheumatology2.jpg",
   },
   {
     title: "Zabiegi estetyczne",
     description: "Procedury estetyczne, takie jak stosowanie osocza, fibryny oraz komórek macierzystych, mają na celu poprawę wyglądu skóry. Zabiegi te mogą pomóc w redukcji zmarszczek, poprawie elastyczności skóry oraz przywróceniu jej zdrowego blasku.",
-    image: "/images/aesthetical.jpg",
+    image: "/images/aesthetical2.jpg",
   },
   {
     title: "Odmładzanie twarzy",
     description: "Zabiegi odmładzające obejmują stosowanie toksyny botulinowej (Botox) oraz kwasu hialuronowego. Te procedury mają na celu wygładzenie zmarszczek, poprawę konturu twarzy i nadanie jej młodszego, bardziej świeżego wyglądu.",
-    image: "/images/facial-rejuvenation.jpg",
+    image: "/images/aging2.jpg",
   },
   {
     title: "Mezoterapia",
@@ -24,7 +24,7 @@ const services = [
   {
     title: "Zabiegi lecznicze",
     description: "Skleroterapia, usuwanie żylaków kończyn dolnych, elektrochirurgia oraz usuwanie włókniaków to nowoczesne metody leczenia, które pomagają w eliminacji schorzeń naczyniowych i skórnych, poprawiając komfort pacjentów oraz ich zdrowie.",
-    image: "/images/medical-treatments.jpg",
+    image: "/images/procedure.jpg",
   },
 ];
 
@@ -36,8 +36,8 @@ const ServicesList = () => {
   };
 
   return (
-    <div className="w-90% mx-4 overflow-hidden">
-      <div className="h-128 py-8 overflow-auto flex flex-wrap gap-4">
+    <div className="w-90% overflow-hidden">
+      <div id="services" className="h-128 pt-10 pb-4 overflow-auto flex flex-wrap gap-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -53,7 +53,7 @@ const ServicesList = () => {
               </div>
               <button
                 onClick={() => toggleDescription(index)}
-                className="bg-[#4095bf] text-white hover:underline focus:outline-none mt-2" >
+                className="bg-slate-300 text-slate-600 hover:underline focus:outline-none mt-2 shadow-lg rounded-lg" >
                 {expandedIndex === index ? 'Pokaż mniej' : 'Pokaż więcej'}
               </button>
             </div>
