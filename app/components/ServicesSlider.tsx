@@ -42,7 +42,7 @@ const ServicesSlider: React.FC = () => {
           <img src="images/chinese.jpg" alt="Usługa" className="w-full h-full object-cover rounded-r-lg" />
           <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-br-lg">
             <p className="text-xl font-semibold">Medycyna chińska</p>
-            <p>Tradycyjne metody leczenia i zdrowia z Chin.</p>
+            <p>Tradycyjne metody leczenia z Chin.</p>
           </div>
         </SwiperSlide>
 
