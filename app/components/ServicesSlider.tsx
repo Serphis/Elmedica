@@ -20,7 +20,7 @@ const ServicesSlider: React.FC = () => {
         loop={true}
         modules={[Autoplay, Pagination]}
         className="mySwiper"
-        style={{ height: '430px' }} >
+        style={{ height: '440px' }} >
 
         <SwiperSlide className="relative flex items-end justify-center h-full rounded-br-lg">
           <img src="images/aesthetical.jpg" alt="Usługa" className="w-full h-full object-cover rounded-r-lg" />
