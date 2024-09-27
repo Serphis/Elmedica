@@ -146,7 +146,7 @@ export default function Index() {
               <div className="rounded-lg shadow-lg bg-white p-4">
                 <ul className="list-disc list-inside text-gray-600 text-left">
                   <li>dr Helena Gworek</li>
-                  <li>tel. 604 274 786</li>
+                  <li>tel. 604 274 786 - tylko SMS</li>
                   <li>96-500 Sochaczew, ul. Okrężna 61</li>
                 </ul>
               </div>
