@@ -40,18 +40,20 @@ export default function Index() {
               <p className="text-4xl font-bold mb-4 text-gray-900">
                 O mnie
               </p>
-              <p className="text-lg text-gray-600 py-1">
-                Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002).
-              </p>
-              <p className="text-lg text-gray-600 py-1">
-                Ukończyła kursy praktyczne i teoretyczne w Chinach oraz liczne kursy Tradycyjnej Medycyny Chińskiej w Polsce i za granicą.
-              </p>
-              <p className="text-lg text-gray-600 py-1">
-                Posiada wieloletnie doświadczenie w leczeniu chorób wewnętrznych, reumatologicznych, onkologicznych i ginekologicznych.
-              </p>
-              <p className="text-lg text-gray-600 py-1">
-                Jest specjalistą medycyny estetycznej i przeciw-starzeniowej. Wykonuje nowoczesne zabiegi estetyczne na bazie naturalnych składników oraz zabiegi leczenia chorob reumatycznych m.in. z wykorzystaniem osocza.
-              </p>
+              <div className="bg-white p-2 rounded-lg shadow-lg bg-opacity-75">
+                <p className="text-lg text-gray-600 py-1">
+                  Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002).
+                </p>
+                <p className="text-lg text-gray-600 py-1">
+                  Ukończyła kursy praktyczne i teoretyczne w Chinach oraz liczne kursy Tradycyjnej Medycyny Chińskiej w Polsce i za granicą.
+                </p>
+                <p className="text-lg text-gray-600 py-1">
+                  Posiada wieloletnie doświadczenie w leczeniu chorób wewnętrznych, reumatologicznych, onkologicznych i ginekologicznych.
+                </p>
+                <p className="text-lg text-gray-600 py-1">
+                  Jest specjalistą medycyny estetycznej i przeciw-starzeniowej. Wykonuje nowoczesne zabiegi estetyczne na bazie naturalnych składników oraz zabiegi leczenia chorob reumatycznych m.in. z wykorzystaniem osocza.
+                </p>
+              </div>
               <div className="flex justify-center pt-4">
                 <button
                     onClick={() => scrollToSection("contact")}
@@ -87,7 +89,7 @@ export default function Index() {
                 Szybko i bez pobierania krwi!
               </p>
 
-              <div className="rounded-lg shadow-lg bg-white p-4">
+              <div className="rounded-lg shadow-lg bg-white bg-opacity-75 p-4">
                 <div className="space-y-4 mb-10">
                   <p className="text-md font-semibold text-gray-800 text-right">
                     Stężenie komórkowe poziomu makro i mikro elementów:
@@ -143,7 +145,7 @@ export default function Index() {
                 Kontakt
               </h2>
 
-              <div className="rounded-lg shadow-lg bg-white p-4">
+              <div className="rounded-lg shadow-lg bg-white p-4 bg-opacity-75">
                 <ul className="list-disc list-inside text-gray-600 text-left">
                   <li>dr Helena Gworek</li>
                   <li>tel. 604 274 786 - tylko SMS</li>

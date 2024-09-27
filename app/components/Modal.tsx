@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
             Szybko i bez pobierania krwi!
           </p>
 
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-lg shadow-lg p-4 bg-opacity-75">
             <div className="space-y-4 mb-4 ">
               <p className="text-md font-semibold text-gray-800 text-center">Stężenie komórkowe poziomu makro i mikro elementów:</p>
               <ul className="list-disc list-inside text-gray-600">
@@ -59,7 +59,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
             </p>
           </div>
 
-          <div className="text-center w-fit mt-2 mx-auto p-4 bg-white shadow-2xl rounded-lg">
+          <div className="text-center w-fit mt-2 mx-auto p-4 bg-white shadow-2xl rounded-lg bg-opacity-75">
             <p className="text-xl font-semibold text-slate-900 mb-2">
               Zapisy pod numerem telefonu:
             </p>
