@@ -40,7 +40,7 @@ export default function Index() {
               <p className="text-4xl font-bold mb-4 text-gray-900">
                 O mnie
               </p>
-              <div className="bg-white p-2 rounded-lg shadow-lg bg-opacity-75">
+              <div className="bg-white p-4 rounded-lg shadow-lg bg-opacity-75">
                 <p className="text-lg text-gray-600 py-1">
                   Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002).
                 </p>
@@ -57,13 +57,13 @@ export default function Index() {
               <div className="flex justify-center pt-4">
                 <button
                     onClick={() => scrollToSection("contact")}
-                    className="px-8 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
+                    className="mt-1 px-8 py-3 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300">
                     Umów wizytę
                 </button>
               </div>
             </div>
 
-            <div className="w-1/2 text-center ml-10 pl-6 h-full rounded-br-lg">
+            <div className="w-1/2 text-center ml-10 pl-6 rounded-br-lg">
               <ServicesSlider />
             </div>
           </div>
