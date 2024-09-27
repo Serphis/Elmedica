@@ -21,16 +21,9 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
           </svg>
         </button>
 
-        <div className="mb-0 relative rounded-t-lg shadow-md overflow-hidden">
-          <img
-            src="/images/vitamins.jpg"
-            alt="Decorative Vitamins"
-            className="w-full h-48 object-cover" />
-        </div>
-
-        <div className="p-6 mt-[-1px] rounded-b-lg bg-cover bg-center"
+        <div className="p-6 mt-[-1px] rounded-lg bg-cover bg-center"
               style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
             Diagnostyka SO/CHECK
           </h2>
           <p className="text-md text-gray-700 mb-4 text-center">
@@ -53,7 +46,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
             </div>
           </div>
           
-          <div className="mx-auto pt-8 px-8">
+          <div className="mx-auto pt-4 px-8">
             <p className="text-md text-center font-semibold text-gray-800">
                 Zadzwoń lub napisz SMS!
             </p>
