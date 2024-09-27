@@ -41,7 +41,10 @@ export default function Index() {
                 O mnie
               </p>
               <p className="text-lg text-gray-600 py-1">
-                Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002). Ukończyła kursy praktyczne i teoretyczne w Chinach oraz liczne kursy Tradycyjnej Medycyny Chińskiej w Polsce i za granicą.
+                Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002).
+              </p>
+              <p className="text-lg text-gray-600 py-1">
+                Ukończyła kursy praktyczne i teoretyczne w Chinach oraz liczne kursy Tradycyjnej Medycyny Chińskiej w Polsce i za granicą.
               </p>
               <p className="text-lg text-gray-600 py-1">
                 Posiada wieloletnie doświadczenie w leczeniu chorób wewnętrznych, reumatologicznych, onkologicznych i ginekologicznych.
@@ -117,7 +120,7 @@ export default function Index() {
                   Zapisy pod numerem telefonu:
                 </p>
                 <p className="text-2xl font-bold text-slate-900">
-                  601-806-058
+                  601-806-058 lub 608-383-573
                 </p>
               </div>
             </div>
