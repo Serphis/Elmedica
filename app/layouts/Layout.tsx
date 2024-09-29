@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "@remix-run/react"
+import { Link } from "@remix-run/react";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const scrollToSection = (sectionId: string) => {
@@ -11,30 +11,36 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     }
   };
 
-    return (
-        <div className="min-h-screen flex flex-col">
-          <header className="sticky top-0 flex justify-between items-center p-3 px-12 bg-slate-100 z-30">
-            <div className="text-2xl text-slate-900 font-bold">Dr Helena Gworek</div>
-            <div className="flex space-x-11 text-base text-slate-800">
-              <button onClick={() => scrollToSection("about")}>O mnie</button>
-              <div className="border-l-2 border-gray-300 h-6 mx-auto"/>
-              <button onClick={() => scrollToSection("services")}>Usługi</button>
-              <div className="border-l-2 border-gray-300 h-6 mx-auto"/>
-              <button onClick={() => scrollToSection("contact")}>Kontakt</button>
-            </div>
-          </header>
-
-          <main className="flex-grow">
-                {children}
-          </main>
-
-          <footer id="contact" className="flex flex-rows justify-between items-center p-2 px-6 bg-slate-200 text-slate-500 text-sm">
-            <p>Design by www.freepik.com</p>
-            <p>Copyright © 2024</p>
-            <p>Projekt Jakub Gałuszewski</p>
-          </footer>
+  return (
+    <div className="min-h-screen flex flex-col">
+      <header className="sticky top-0 flex justify-between items-center p-3 px-4 sm:px-12 bg-slate-100 z-30">
+        <div className="text-xl sm:text-2xl text-slate-900 font-bold">Dr Helena Gworek</div>
+        <div className="flex space-x-4 sm:space-x-11 text-sm sm:text-base text-slate-800">
+          <button onClick={() => scrollToSection("about")} className="hover:underline">
+            O mnie
+          </button>
+          <div className="border-l-2 border-gray-300 h-6 mx-auto hidden sm:block" />
+          <button onClick={() => scrollToSection("services")} className="hover:underline">
+            Usługi
+          </button>
+          <div className="border-l-2 border-gray-300 h-6 mx-auto hidden sm:block" />
+          <button onClick={() => scrollToSection("contact")} className="hover:underline">
+            Kontakt
+          </button>
         </div>
-    )
-}
+      </header>
+
+      <main className="flex-grow">
+        {children}
+      </main>
+
+      <footer id="contact" className="flex flex-col sm:flex-row justify-between items-center p-4 bg-slate-200 text-slate-500 text-xs sm:text-sm">
+        <p className="mb-2 sm:mb-0">Design by www.freepik.com</p>
+        <p className="mb-2 sm:mb-0">Copyright © 2024</p>
+        <p>Projekt Jakub Gałuszewski</p>
+      </footer>
+    </div>
+  );
+};
 
 export default Layout;

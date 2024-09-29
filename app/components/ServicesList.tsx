@@ -36,16 +36,16 @@ const ServicesList = () => {
   };
 
   return (
-    <div className="w-90% overflow-hidden">
-      <div className="h-128 pb-4 overflow-auto flex flex-wrap gap-4">
+    <div className="w-90% overflow-hidden rounded-lg">
+      <div className="h-128 rounded-b-lg overflow-auto flex flex-col md:flex-row gap-2 md:gap-4 p-2 md:p-0">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 flex-1"
+            className="flex flex-row md:flex-col bg-white shadow-md md:shadow-lg rounded-lg overflow-hidden transition-all duration-300 flex-1"
             style={{ flexBasis: 'calc(20% - 16px)', alignSelf: 'flex-start' }} >
-            <img src={service.image} alt={service.title} className="w-full h-48 object-cover rounded-t-lg" />
+            <img src={service.image} alt={service.title} className="w-1/3 md:w-full h-48 object-cover md:rounded-t-lg md:rounded-l-none rounded-l-lg" />
             <div className="p-4 flex flex-col justify-between">
-              <h3 className="text-md font-bold text-gray-700 mb-2">{service.title}</h3>
+              <h3 className="text-md lg:text-lg font-bold text-gray-700 mb-2 md:h-16 xl:h-10">{service.title}</h3>
               <div className={`transition-all duration-300 ${expandedIndex === index ? 'max-h-96' : 'max-h-16 overflow-hidden'}`}>
                 <p className="text-sm text-gray-600">
                   {service.description}
