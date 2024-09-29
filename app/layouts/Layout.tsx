@@ -34,10 +34,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         {children}
       </main>
 
-      <footer id="contact" className="flex flex-col sm:flex-row justify-between items-center p-4 bg-slate-200 text-slate-500 text-xs sm:text-sm">
-        <p className="mb-2 sm:mb-0">Design by www.freepik.com</p>
-        <p className="mb-2 sm:mb-0">Copyright © 2024</p>
-        <p>Projekt Jakub Gałuszewski</p>
+      <footer id="contact" className="flex flex-row sm:flex-col justify-between items-center p-2 bg-slate-200 text-slate-500 text-xs sm:text-sm">
+        <p className="mb-1 sm:mb-2">Design by www.freepik.com</p>
+        <p className="mb-1 sm:mb-2">Copyright © 2024</p>
+        <p className="mb-1 sm:mb-2">Projekt Jakub Gałuszewski</p>
       </footer>
     </div>
   );

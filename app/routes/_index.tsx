@@ -138,13 +138,13 @@ export default function Index() {
           </div>
         </div>
 
-        <div id="contact" className="mx-0 md:mx-2 flex flex-col-reverse md:flex-row-reverse">
-          <div className="flex flex-col h-full justify-center md:w-3/4">
+        <div id="contact" className="mx-0 md:mx-2 flex flex-col-reverse md:flex-row-reverse mb-10">
+          <div className="flex flex-col justify-center md:w-3/4 h-28 md:h-72">
             <div
               className="shadow-lg mx-2 lg:mx-0 p-8 bg-cover bg-center rounded-none rounded-b-lg md:rounded-lg"
               style={{ backgroundImage: "url('/images/bg-title.jpg')" }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 md:mt-12 mb-4 text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 md:mt-12 mb-8 text-left">
                 Kontakt
               </h2>
 
@@ -158,11 +158,11 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="md:w-1/2 px-2 mt-6 lg:mt-0">
+          <div className="md:w-1/2 px-2 mt-6 md:mt-0">
             <img
               src="/images/contact.jpg"
               alt="Decorative Contact"
-              className="w-full h-28 md:h-full object-cover rounded-none rounded-t-lg md:rounded-lg shadow-lg"
+              className="w-full h-28 md:h-72 object-cover rounded-none rounded-t-lg md:rounded-lg shadow-lg"
             />
           </div>
         </div>
