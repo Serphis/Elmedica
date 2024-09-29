@@ -8,13 +8,16 @@ import ServicesList from "~/components/ServicesList";
 export const meta: MetaFunction = () => {
   return [
     { title: "Elmedica - Helena Gworek" },
-    { name: "description", content: "" },
+    { name: "description", content: "Specjalistka Tradycyjnej Medycyny Chińskiej oferująca nowoczesne zabiegi estetyczne i skuteczną diagnostykę." },
+    { name: "keywords", content: "medycyna chinska, medycyna estetyczna, zdrowie, wellness, leczenie, Sochaczew, botoks, botox, lekarz, diagnostyka, badanie, estetyczna, helena, gworek, socheck, odmladzanie, odmładzanie, zabiegi, zabieg, stawy, choroby, stawy, stawow, stawów, osocze, komorki, macierzyste, mezoterapia, usuwanie, żylaki, zylaki, żylaków, zylakow, skora" },
+    { name: "robots", content: "index, follow" },
   ];
 };
 
 export default function Index() {
   const [isModalOpen, setModalOpen] = useState(true);
   const closeModal = () => setModalOpen(false);
+
   useEffect(() => {
     setModalOpen(true);
   }, []);
@@ -30,17 +33,19 @@ export default function Index() {
 
   return (
     <Layout>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <div className="bg-slate-100">
         <Modal isOpen={isModalOpen} onClose={closeModal} />
 
-        <div id="about" className="w-full md:py-4">
+        <section id="about" className="w-full md:py-4">
           <div
             className="flex flex-col md:flex-row justify-between items-start bg-cover bg-center rounded-lg md:shadow-lg"
             style={{ backgroundImage: "url('/images/bg-title.jpg')" }}
+            role="banner"
+            aria-label="Informacje o doktorze"
           >
             <div className="flex flex-col flex-grow w-full pt-2 md:pt-6 px-4 md:px-0">
-              <p className="text-xl md:text-2xl lg:text-4xl px-1 lg:py-2 lg:px-4 font-bold text-gray-900">O mnie</p>
+              <h1 className="text-xl md:text-2xl lg:text-4xl px-1 lg:py-2 lg:px-4 font-bold text-gray-900">O mnie</h1>
               <div className="bg-white px-2 lg:pl-8 lg:pr-2 rounded-lg shadow-lg bg-opacity-75 flex-grow h-full sm:h-52 md:h-auto">
                 <p className="text-sm xl:text-base text-gray-600 py-1">
                   Dyplomowany specjalista Tradycyjnej Medycyny Chińskiej (Pekin 2002).
@@ -52,7 +57,7 @@ export default function Index() {
                   Posiada wieloletnie doświadczenie w leczeniu chorób wewnętrznych, reumatologicznych, onkologicznych i ginekologicznych.
                 </p>
                 <p className="text-sm xl:text-base text-gray-600 py-1">
-                  Jest specjalistą medycyny estetycznej i przeciw-starzeniowej. Wykonuje nowoczesne zabiegi estetyczne na bazie naturalnych składników oraz zabiegi leczenia chorob reumatycznych m.in. z wykorzystaniem osocza.
+                  Jest specjalistą medycyny estetycznej i przeciw-starzeniowej. Wykonuje nowoczesne zabiegi estetyczne na bazie naturalnych składników oraz zabiegi leczenia chorób reumatycznych m.in. z wykorzystaniem osocza.
                 </p>
               </div>
 
@@ -60,6 +65,7 @@ export default function Index() {
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="px-6 lg:px-8 py-2 bg-[#4095bf] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2d6986] transition duration-300"
+                  aria-label="Umów wizytę"
                 >
                   Umów wizytę
                 </button>
@@ -71,15 +77,13 @@ export default function Index() {
             </div>
           </div>
 
-          <div id="services" className="text-center mt-8 md:mt-16 mb-5 text-xl md:text-2xl lg:text-3xl text-slate-700">
+          <h2 className="text-center mt-8 md:mt-16 mb-5 text-xl md:text-2xl lg:text-3xl text-slate-700" id="services">
             Oferowane usługi
-          </div>
-          <div>
-            <ServicesList />
-          </div>
-        </div>
+          </h2>
+          <ServicesList />
+        </section>
 
-        <div className="w-full md:my-10 flex flex-col-reverse md:flex-row px-2 sm:px-4">
+        <section className="w-full md:my-10 flex flex-col-reverse md:flex-row px-2 sm:px-4">
           <div className="flex flex-col justify-center w-full md:w-3/4">
             <div
               className="shadow-lg rounded-none rounded-b-lg md:rounded-lg bg-slate-50 bg-cover bg-center p-2"
@@ -132,13 +136,14 @@ export default function Index() {
           <div className="md:w-1/3 md:ml-2 shadow-lg rounded-t-lg rounded-none md:rounded-lg mt-4 lg:mt-0">
             <img
               src="/images/vitamins.jpg"
-              alt="Decorative Vitamins"
+              alt="Witaminy i suplementy"
               className="h-full object-cover shadow-lg rounded-t-lg rounded-none md:rounded-lg"
+              loading="lazy"
             />
           </div>
-        </div>
+        </section>
 
-        <div id="contact" className="mx-0 md:mx-2 flex flex-col-reverse md:flex-row-reverse mb-10">
+        <section id="contact" className="mx-0 md:mx-2 flex flex-col-reverse md:flex-row-reverse mb-10">
           <div className="flex flex-col justify-center md:w-3/4 h-28 md:h-72">
             <div
               className="shadow-lg mx-2 lg:mx-0 p-8 bg-cover bg-center rounded-none rounded-b-lg md:rounded-lg"
@@ -161,11 +166,12 @@ export default function Index() {
           <div className="md:w-1/2 px-2 mt-6 md:mt-0">
             <img
               src="/images/contact.jpg"
-              alt="Decorative Contact"
+              alt="Kontakt"
               className="w-full h-28 md:h-72 object-cover rounded-none rounded-t-lg md:rounded-lg shadow-lg"
+              loading="lazy"
             />
           </div>
-        </div>
+        </section>
       </div>
     </Layout>
   );
