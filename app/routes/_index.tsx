@@ -141,9 +141,9 @@ export default function Index() {
                 className="shadow-lg rounded-none rounded-b-lg md:rounded-lg bg-slate-50 bg-cover bg-center p-2"
                 style={{ backgroundImage: "url('/images/bg-title.webp')" }}
               >
-                <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 my-2 text-left">
+                <h1 className="text-2xl lg:text-4xl font-bold text-gray-900 my-2 text-left">
                   Diagnostyka SO/CHECK
-                </h2>
+                </h1>
                 <p className="text-md md:text-lg lg:text-xl text-gray-700 text-left mb-10">
                   Szybko i bez pobierania krwi!
                 </p>
