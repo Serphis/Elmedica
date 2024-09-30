@@ -38,7 +38,7 @@ export default function Index() {
     "description": "Specjalistka oferująca nowoczesne zabiegi estetyczne i skuteczną diagnostykę w Sochaczewie.",
     "url": "https://drhelenagworek.pl",
     "logo": "https://drhelenagworek.pl/favicon.ico",
-    "image": "https://drhelenagworek.pl/images/rheumatology2.jpg",
+    "image": "https://drhelenagworek.pl/images/rheumatology2.webp",
     "telephone": "601-806-058",
     "address": {
       "@type": "PostalAddress",
@@ -92,7 +92,7 @@ export default function Index() {
           <section id="about" className="w-full md:py-4">
             <div
               className="flex flex-col md:flex-row justify-between items-start bg-cover bg-center rounded-lg md:shadow-lg"
-              style={{ backgroundImage: "url('/images/bg-title.jpg')" }}
+              style={{ backgroundImage: "url('/images/bg-title.webp')" }}
               role="banner"
               aria-label="Informacje o doktorze"
             >
@@ -139,7 +139,7 @@ export default function Index() {
             <div className="flex flex-col justify-center w-full md:w-3/4">
               <div
                 className="shadow-lg rounded-none rounded-b-lg md:rounded-lg bg-slate-50 bg-cover bg-center p-2"
-                style={{ backgroundImage: "url('/images/bg-title.jpg')" }}
+                style={{ backgroundImage: "url('/images/bg-title.webp')" }}
               >
                 <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 my-2 text-left">
                   Diagnostyka SO/CHECK
@@ -187,7 +187,7 @@ export default function Index() {
 
             <div className="md:w-1/3 md:ml-2 shadow-lg rounded-t-lg rounded-none md:rounded-lg mt-4 lg:mt-0">
               <img
-                src="/images/vitamins.jpg"
+                src="/images/vitamins.webp"
                 alt="Witaminy i suplementy"
                 className="h-full object-cover shadow-lg rounded-t-lg rounded-none md:rounded-lg"
                 loading="lazy"
@@ -199,7 +199,7 @@ export default function Index() {
             <div className="flex flex-col justify-center md:w-3/4 h-28 md:h-72">
               <div
                 className="shadow-lg mx-2 lg:mx-0 p-8 bg-cover bg-center rounded-none rounded-b-lg md:rounded-lg"
-                style={{ backgroundImage: "url('/images/bg-title.jpg')" }}
+                style={{ backgroundImage: "url('/images/bg-title.webp')" }}
               >
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 md:mt-12 mb-8 text-left">
                   Kontakt
@@ -217,7 +217,7 @@ export default function Index() {
 
             <div className="md:w-1/2 px-2 mt-6 md:mt-0">
               <img
-                src="/images/contact.jpg"
+                src="/images/contact.webp"
                 alt="Kontakt"
                 className="w-full h-28 md:h-72 object-cover rounded-none rounded-t-lg md:rounded-lg shadow-lg"
                 loading="lazy"

@@ -22,7 +22,7 @@ const ServicesSlider: React.FC = () => {
         className="mySwiper" >
 
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded r-lg">
-          <img src="images/aesthetical.jpg" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
+          <img src="images/aesthetical.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
             <p className="text-base md:text-xl font-semibold">Medycyna estetyczna</p>
             <p className='text-sm md:text-base'>Procedury poprawiające wygląd i zdrowie skóry.</p>
@@ -30,7 +30,7 @@ const ServicesSlider: React.FC = () => {
         </SwiperSlide>
 
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-          <img src="images/aging.jpg" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
+          <img src="images/aging.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
             <p className="text-base md:text-xl font-semibold">Medycyna anti-aging</p>
             <p className='text-sm md:text-base'>Technologie i metody przeciwdziałające starzeniu się.</p>
@@ -38,7 +38,7 @@ const ServicesSlider: React.FC = () => {
         </SwiperSlide>
 
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-          <img src="images/chinese.jpg" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
+          <img src="images/chinese.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
             <p className="text-base md:text-xl font-semibold">Medycyna chińska</p>
             <p className='text-sm md:text-base'>Tradycyjne metody leczenia z Chin.</p>
@@ -46,7 +46,7 @@ const ServicesSlider: React.FC = () => {
         </SwiperSlide>
 
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-          <img src="images/rheumatology.jpg" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
+          <img src="images/rheumatology.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
             <p className="text-base md:text-xl font-semibold">Reumatologia</p>
             <p className='text-sm md:text-base'>Nowoczesne metody leczenia schorzeń reumatycznych.</p>

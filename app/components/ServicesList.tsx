@@ -4,27 +4,27 @@ const services = [
   {
     title: "Leczenie chorób stawów",
     description: "Obejmuje stosowanie osocza oraz komórek macierzystych. Terapeutyczne zastosowanie tych technologii pozwala na regenerację i odbudowę uszkodzonych tkanek stawowych, co może przynieść ulgę w bólu i poprawić funkcjonowanie stawów.",
-    image: "/images/rheumatology2.jpg",
+    image: "/images/rheumatology2.webp",
   },
   {
     title: "Zabiegi estetyczne",
     description: "Wykorzystywanie osocza, fibryny oraz komórek macierzystych, w celu poprawy wyglądu skóry. Zabiegi te mogą pomóc w redukcji zmarszczek, poprawie elastyczności skóry oraz przywróceniu jej zdrowego blasku.",
-    image: "/images/aesthetical2.jpg",
+    image: "/images/aesthetical2.webp",
   },
   {
     title: "Odmładzanie twarzy",
     description: "Zabiegi odmładzające obejmują stosowanie toksyny botulinowej (Botox) oraz kwasu hialuronowego. Te procedury mają na celu wygładzenie zmarszczek, poprawę konturu twarzy i nadanie jej młodszego, bardziej świeżego wyglądu.",
-    image: "/images/aging2.jpg",
+    image: "/images/aging2.webp",
   },
   {
     title: "Mezoterapia",
     description: "Polega na wprowadzaniu substancji odżywczych i regenerujących w głąb skóry, zarówno na twarzy, jak i ciele. Zabieg ten jest skuteczny w poprawie kondycji skóry, jej nawilżeniu i regeneracji.",
-    image: "/images/mesotherapy.jpg",
+    image: "/images/mesotherapy.webp",
   },
   {
     title: "Zabiegi lecznicze",
     description: "Skleroterapia, usuwanie żylaków kończyn dolnych, elektrochirurgia oraz usuwanie włókniaków. Te nowoczesne metody leczenia pomagają w eliminacji schorzeń naczyniowych i skórnych, poprawiając komfort oraz zdrowie pacjentów.",
-    image: "/images/procedure.jpg",
+    image: "/images/procedure.webp",
   },
 ];
 

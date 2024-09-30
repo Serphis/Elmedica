@@ -22,7 +22,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
         </button>
 
         <div className="p-6 mt-[-1px] rounded-lg bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/bg-title.jpg')" }}>
+              style={{ backgroundImage: "url('/images/bg-title.webp')" }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
             Diagnostyka SO/CHECK
           </h2>
