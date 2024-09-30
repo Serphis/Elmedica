@@ -45,7 +45,7 @@ const ServicesList = () => {
             style={{ flexBasis: 'calc(20% - 16px)', alignSelf: 'flex-start' }} >
             <img src={service.image} alt={service.title} className="w-1/3 md:w-full h-48 object-cover md:rounded-t-lg md:rounded-l-none rounded-l-lg" />
             <div className="p-4 flex flex-col justify-between">
-              <h3 className="text-md lg:text-lg font-bold text-gray-700 mb-2 md:h-16 xl:h-10">{service.title}</h3>
+              <h1 className="text-md lg:text-lg font-bold text-gray-700 mb-2 md:h-16 xl:h-10">{service.title}</h1>
               <div className={`transition-all duration-300 ${expandedIndex === index ? 'max-h-96' : 'max-h-16 overflow-hidden'}`}>
                 <p className="text-sm text-gray-600">
                   {service.description}

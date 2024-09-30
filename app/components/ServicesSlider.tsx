@@ -24,7 +24,7 @@ const ServicesSlider: React.FC = () => {
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded r-lg">
           <img src="images/aesthetical.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-            <p className="text-base md:text-xl font-semibold">Medycyna estetyczna</p>
+            <h1 className="text-base md:text-xl font-semibold">Medycyna estetyczna</h1>
             <p className='text-sm md:text-base'>Procedury poprawiające wygląd i zdrowie skóry.</p>
           </div>
         </SwiperSlide>
@@ -32,7 +32,7 @@ const ServicesSlider: React.FC = () => {
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
           <img src="images/aging.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-            <p className="text-base md:text-xl font-semibold">Medycyna anti-aging</p>
+            <h1 className="text-base md:text-xl font-semibold">Medycyna anti-aging</h1>
             <p className='text-sm md:text-base'>Technologie i metody przeciwdziałające starzeniu się.</p>
           </div>
         </SwiperSlide>
@@ -40,7 +40,7 @@ const ServicesSlider: React.FC = () => {
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
           <img src="images/chinese.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-            <p className="text-base md:text-xl font-semibold">Medycyna chińska</p>
+            <h1 className="text-base md:text-xl font-semibold">Medycyna chińska</h1>
             <p className='text-sm md:text-base'>Tradycyjne metody leczenia z Chin.</p>
           </div>
         </SwiperSlide>
@@ -48,7 +48,7 @@ const ServicesSlider: React.FC = () => {
         <SwiperSlide className="flex justify-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
           <img src="images/rheumatology.webp" alt="Usługa" className="h-48 md:h-96 w-full object-cover rounded-b-lg md:rounded-b-none md:rounded-r-lg" />
           <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 pb-6 text-center rounded-b-lg md:rounded-b-none md:rounded-r-lg">
-            <p className="text-base md:text-xl font-semibold">Reumatologia</p>
+            <h1 className="text-base md:text-xl font-semibold">Reumatologia</h1>
             <p className='text-sm md:text-base'>Nowoczesne metody leczenia schorzeń reumatycznych.</p>
           </div>
         </SwiperSlide>
