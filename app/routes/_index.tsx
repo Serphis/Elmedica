@@ -7,14 +7,12 @@ import ServicesList from "~/components/ServicesList";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Elmedica - Helena Gworek" },
-    { name: "description", content: "Specjalistka oferująca nowoczesne zabiegi estetyczne i skuteczną diagnostykę." },
-    { name: "keywords", content: "medycyna chinska, medycyna estetyczna, zdrowie, wellness, leczenie, Sochaczew, botoks, botox, lekarz, diagnostyka, badanie, estetyczna, helena, gworek, socheck, odmladzanie, odmładzanie, zabiegi, zabieg, stawy, choroby, stawow, stawów, osocze, komorki, macierzyste, mezoterapia, usuwanie, żylaki, zylaki, żylaków, zylakow, skora" },
-    { name: "robots", content: "index, follow" },
+    { name: "keywords", content: "" },
   ];
 };
 
 export default function Index() {
+  
   const [isModalOpen, setModalOpen] = useState(true);
   const closeModal = () => setModalOpen(false);
 
@@ -81,9 +79,15 @@ export default function Index() {
 
   return (
     <>
+      <title>Dr Helena Gworek</title>
+      <meta name="description" content="Specjalistka oferująca nowoczesne zabiegi estetyczne i skuteczną diagnostykę." />
+      <meta name="robots" content="index, follow" />
+      <meta name="keywords" content="medycyna chinska, medycyna estetyczna, botoks sochaczew, botox sochaczew, zdrowie, wellness, leczenie, Sochaczew, botoks, botox, lekarz, diagnostyka, badanie, estetyczna, helena, gworek, socheck, odmladzanie, odmładzanie, zabiegi, zabieg, stawy, choroby, stawow, stawów, osocze, komorki, macierzyste, mezoterapia, usuwanie, żylaki, zylaki, żylaków, zylakow, skora" />
+
       <script type="application/ld+json">
         {JSON.stringify(schemaMarkup)}
       </script>
+
       <Layout>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className="bg-slate-100">
