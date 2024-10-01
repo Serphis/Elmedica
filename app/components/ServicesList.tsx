@@ -37,7 +37,7 @@ const ServicesList = () => {
 
   return (
     <div className="w-90% overflow-hidden rounded-lg">
-      <div className="h-128 rounded-b-lg overflow-auto flex flex-col md:flex-row gap-2 md:gap-4 p-2 md:p-0">
+      <div className="h-128 rounded-b-lg overflow-auto flex flex-col md:flex-row gap-2 md:gap-4 p-2 md:p-0 mx-0 md:mx-4">
         {services.map((service, index) => (
           <div
             key={index}

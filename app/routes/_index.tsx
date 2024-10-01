@@ -35,7 +35,7 @@ export default function Index() {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Elmedica - Dr Helena Gworek",
-    "description": "Specjalistka oferująca nowoczesne zabiegi estetyczne i skuteczną diagnostykę w Sochaczewie.",
+    "description": "Specjalistka oferująca nowoczesne zabiegi estetyczne i skutenpmczną diagnostykę w Sochaczewie.",
     "url": "https://drhelenagworek.pl",
     "logo": "https://drhelenagworek.pl/favicon.ico",
     "image": "https://drhelenagworek.pl/images/rheumatology2.webp",
@@ -91,7 +91,7 @@ export default function Index() {
 
           <section id="about" className="w-full md:py-4">
             <div
-              className="flex flex-col md:flex-row justify-between items-start bg-cover bg-center rounded-lg md:shadow-lg"
+              className="flex flex-col md:flex-row justify-between items-start bg-cover bg-center rounded-lg md:shadow-lg mx-2 md:mx-4"
               style={{ backgroundImage: "url('/images/bg-title.webp')" }}
               role="banner"
               aria-label="Informacje o doktorze"
