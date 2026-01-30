@@ -56,7 +56,7 @@ const ServicesSlider: React.FC = () => {
         <div className="swiper-pagination-container"></div>
       </Swiper>
 
-      <style jsx>{`
+      <style>{`
 
         .swiper-pagination {
           display: flex;

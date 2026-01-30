@@ -24,25 +24,26 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
         <div className="p-6 mt-[-1px] rounded-lg bg-cover bg-center"
               style={{ backgroundImage: "url('/images/bg-title.webp')" }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
-            Diagnostyka SO/CHECK
+            Odmładzanie twarzy
           </h2>
           <p className="text-md text-gray-700 mb-4 text-center">
-            Szybko i bez pobierania krwi!
+            Szybko i bezpiecznie!
           </p>
 
           <div className="bg-white rounded-lg shadow-lg p-4 bg-opacity-75">
             <div className="space-y-4 mb-4 ">
-              <p className="text-md font-semibold text-gray-800 text-center">Stężenie komórkowe poziomu makro i mikro elementów:</p>
+              <p className="text-md font-semibold text-gray-800 text-center">Nowoczesne zabiegi medycyny estetycznej obejmujące:</p>
               <ul className="list-disc list-inside text-gray-600">
-                <li>21 minerałów: wapń, magnez, żelazo, sód, potas, miedź, cynk, selen, jod i inne</li>
-                <li>7 witamin: A, C, E, D3, B1, B9, B12</li>
-                <li>15 ciężkich metali: szkodliwych (aluminium, bor, rtęć, ołów, kadm, nikiel i inne)</li>
+                <li><b>Botox (toksyna botulinowa)</b> – redukcja zmarszczek mimicznych (czoło, lwia zmarszczka, kurze łapki)</li>
+                <li><b>Kwas hialuronowy</b> – wypełnienie zmarszczek, poprawa owalu twarzy i przywrócenie objętości</li>
+                <li><b>Wygładzenie zmarszczek statycznych</b> i poprawa napięcia skóry</li>
+                <li><b>Intensywne nawilżenie i odświeżenie</b> wyglądu twarzy</li>
               </ul>
             </div>
 
             <div className="flex justify-between items-center">
-              <p className="text-left text-md font-semibold text-gray-800">Poziom stresu oksydacyjnego</p>
-              <p className="text-right text-md font-semibold text-gray-800">Ocena stanów zapalnych</p>
+              <p className="text-left text-lg w-1/3 font-semibold text-gray-800">Naturalny efekt odmłodzenia</p>
+              <p className="text-right text-lg w-1/3 font-semibold text-gray-800">Poprawa konturu i jakości skóry</p>
             </div>
           </div>
           
